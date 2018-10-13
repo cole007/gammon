@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Gammon",
+	"version": "0.1",
+	"permissions": [
+	  "activeTab"
+	],	
+	"description": "Install this Chrome Extension to replace any instance of Tommy Robinson with his birth name, 'Stephen Christopher Yaxley-Lennon'. ",
+	"icons": { "16": "images/gammon16.png",
+           "48": "images/gammon48.png",
+          "128": "images/gammon128.png" },
+	"content_scripts": 
+	[
+		{
+			"matches": ["http://*/*","https://*/*"],
+			"js": ["background.js"],
+			"run_at": "document_end"  
+		}
+	]
+}
